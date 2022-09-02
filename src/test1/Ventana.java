@@ -42,6 +42,7 @@ public class Ventana extends javax.swing.JFrame {
         setTitle("Test");
         setMinimumSize(new java.awt.Dimension(100, 100));
         setPreferredSize(new java.awt.Dimension(540, 400));
+        getContentPane().setLayout(new java.awt.BorderLayout());
 
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
@@ -55,7 +56,7 @@ public class Ventana extends javax.swing.JFrame {
         getContentPane().add(jPanel3, java.awt.BorderLayout.PAGE_START);
         getContentPane().add(resultado, java.awt.BorderLayout.CENTER);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Opciones"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
         jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
         agregar.setText("Agregar");
@@ -129,6 +130,11 @@ public class Ventana extends javax.swing.JFrame {
        {
            evt.consume();
        }
+       /*
+       if(!Character.isDigit(evt.getKeyChar))){
+            evt.consume();
+       }
+       */
     }//GEN-LAST:event_numeroKeyTyped
 
     /**
